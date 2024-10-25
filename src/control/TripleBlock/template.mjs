@@ -29,9 +29,11 @@ ${DARKMODE_SELECTOR_VALUE}
 
 .${clss.ROOT_CLASS}
 {
+  display: flex;
   width: inherit;
-  height:100%;
+  height: 100%;
   min-width: 685px;
+  flex-direction: column;
 }
 `);
 

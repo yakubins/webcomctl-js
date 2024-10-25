@@ -32,7 +32,6 @@ mk.newCSS('CSS', `
   position: relative;
   height: 100%;
   width: 100%;
-  overflow: auto;
 }
 
 .${clss.ROOT_CLASS} > span
@@ -98,6 +97,7 @@ span.${clss.NONE_CLASS}
 {
   width: 100%;
   height: 100%;
+  overflow: auto;
 }
 `);
 

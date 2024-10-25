@@ -2,6 +2,9 @@ import ControlMaker from '../../lib/ControlMaker.mjs';
 import { DARKMODE_SELECTOR_VALUE } from '../../lib/DarkMode.mjs';
 const mk = new ControlMaker('WSPrint', import.meta.url);
 
+const SCTHBG_CLR = '#b5b5b5c7';
+const SCTRBG_CLR = 'transparent';
+
 const clss = mk.newClassNameMap([
   "ROOT_CLASS",
   "PORT_CLASS",
@@ -23,6 +26,24 @@ mk.newCSS('CSS', `
 ${DARKMODE_SELECTOR_VALUE}
 {
   ${vars.toString(1)};
+}
+
+.${clss.ROOT_CLASS}::-webkit-scrollbar
+{
+  width: 10px;
+  height: 10px;
+}
+
+.${clss.ROOT_CLASS}::-webkit-scrollbar-thumb
+{
+  background-color: ${SCTHBG_CLR};
+  border-radius: 10px;
+}
+
+.${clss.ROOT_CLASS}::-webkit-scrollbar-track,
+.${clss.ROOT_CLASS}::-webkit-scrollbar-corner
+{
+  background-color: ${SCTRBG_CLR};
 }
 
 .${clss.ROOT_CLASS}

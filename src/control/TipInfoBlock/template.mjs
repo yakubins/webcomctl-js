@@ -50,7 +50,8 @@ ${DARKMODE_SELECTOR_VALUE}
 .${clss.PORT_CLASS}
 {
   width: 100%;
-  height: 100%;
+  height: calc(100% - 43px);
+  
 }
 
 .${clss.ROOT_CLASS} *

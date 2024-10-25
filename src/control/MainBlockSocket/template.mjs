@@ -34,7 +34,6 @@ export const CSS = `
 
 .${ROOT_CLASS}
 {
-  position: fixed;
   display: flex;
   flex-direction: row-reverse;
   width: 100%;
